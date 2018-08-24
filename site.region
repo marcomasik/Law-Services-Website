@@ -13,13 +13,6 @@
 
       <header class="site-header">
 
-        <!-- header image -->
-        <div class="header-image-wrapper">
-          <div class="header-image">
-            <squarespace:block-field id="header-image-{collection.id}" columns="12" />
-          </div>
-        </div>
-
         <!-- site navigation -->
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
 
