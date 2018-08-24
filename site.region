@@ -9,22 +9,22 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
+    <!-- header image -->
+    {.section website}
+    <div class="header-image-wrapper">
+      <div class="header-image">
+        <squarespace:block-field id="header-image--{collection.id}" columns="12" />
+          <!-- site title or logo -->
+          <h1 class="site-title-heading" data-content-field="site-title">
+            <a href="/" class="site-title-link">{siteTitle} <span>{siteTagLine}</span></a>
+          </h1>
+        </div>
+    </div>
+    {.end}
+
     <div class="site-container">
 
       <header class="site-header">
-
-        <!-- header image -->
-        {.section website}
-        <div class="header-image-wrapper">
-          <div class="header-image">
-            <squarespace:block-field id="header-image--{collection.id}" columns="12" />
-              <!-- site title or logo -->
-              <h1 class="site-title-heading" data-content-field="site-title">
-                <a href="/" class="site-title-link">{siteTitle}<span>{siteTagLine}</span></a>
-              </h1>
-            </div>
-        </div>
-        {.end}
 
         <!-- site navigation -->
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />

@@ -16,6 +16,21 @@ body {
   font-weight: normal;
 }
 
+.header-image-wrapper {
+
+  [class*=sqs-col] {
+
+    .sqs-block {
+      padding: 0;
+    }
+  }
+
+  .sqs-layout > .sqs-row {
+    margin: 0;
+  }
+
+}
+  
 .site-container {
   line-height: 1.6em;
   color: #777;
@@ -112,6 +127,38 @@ body.collection-type-blog.view-list {
 
 @media screen and (max-width: 640px) {
   @import 'sqs-grid-breaker';
+
+  body {
+
+    .header-image-wrapper {
+
+      .sqs-layout {
+
+        .sqs-row {
+          padding-top: 0 !important;
+
+          &:first-child {
+            padding-top: 0 !important;
+          }
+
+          &:last-child {
+            padding-top: 0 !important;
+          }
+
+          .sqs-block {
+
+            &:first-child {
+              padding-top: 0 !important;
+            }
+
+            &:last-child {
+              padding-top: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }  
 }
 
 
