@@ -22,13 +22,12 @@
     </div>
     {.end}
 
+    <!-- site navigation -->
+    <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+
     <div class="site-container">
 
       <header class="site-header">
-
-        <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-
       </header>
 
       <!-- cms content injection point -->
