@@ -4,6 +4,17 @@
 
 
 
+
+/* Colors
+***************************************************/
+
+@gray: #D8DBE2;
+@black: #262626;
+@madison_dark_blue: #2C3E50;
+@alice_light_blue: #E4F1FE;
+@royal_blue: #4183d7;
+
+
 /* General syles
 ***************************************************/
 
@@ -13,8 +24,8 @@ body {
   //   "Fira Sans", "Droid Sans", "Helvetica Neue",
   //   sans-serif;
   font-family: montserrat;
-  color: #262626;
-  background: #D8DBE2;
+  color: @black;
+  background: @gray;
   font-size: 100%;
   font-weight: normal;
 }
@@ -34,6 +45,16 @@ body {
 
   .sqs-layout > .sqs-row {
     margin: 0;
+  }
+
+  .header-image-color-layer {
+    height: 50%;
+    background: @royal_blue;
+    opacity: .33;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   h1.site-title-heading {
@@ -71,29 +92,31 @@ body {
 
 .site-navigation {
   text-align: center;
-  background: #2C3E50;
+  background: @madison_dark_blue;
 }
 
 .site-navigation-list {
     margin: 0;
-    padding: 0.83em;
 }
 
 .site-navigation-item {
   display: inline-block;
   font-size: 87.5%;
+  padding: 0.83em;
 
   & + .site-navigation-item {
     margin-left: 1em;
   }
 
   a {
-    color: #E4F1FE;
+    color: @alice_light_blue;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0.83em;
 
     &:hover {
-      color: #999;
+      color: @madison_dark_blue;
+      background: @gray;
     }
   }
 
