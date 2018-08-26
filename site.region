@@ -16,10 +16,15 @@
         <squarespace:block-field id="header-image--{collection.id}" columns="12" />
       </div>
         <!-- site title or logo -->
-      <div class="header-image-color-layer"></div>
-        <h1 class="site-title-heading" data-content-field="site-title">
-          <a href="/" class="site-title-link">{siteTitle} <span>{siteTagLine}</span></a>
-        </h1>
+      <div class="header-image-lower-half">
+        <div class="header-image-color-layer">
+        </div>
+        <div class="site-title-wrapper">
+          <h1 class="site-title-heading" data-content-field="site-title">
+            <a href="/" class="site-title-link">{siteTitle} <span>{siteTagLine}</span></a>
+          </h1>
+        </div>
+      </div>            
     </div>
     {.end}
 
