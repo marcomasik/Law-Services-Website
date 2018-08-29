@@ -13,7 +13,7 @@
     <div class="header-image-wrapper">
       {.section website}
       <div class="header-image">
-        <squarespace:block-field id="header-image--{website.id}" columns="12" />
+        <squarespace:block-field id="header-image--{collection.id}" columns="12" />
       </div>
       {.end}
         <!-- site title or logo -->
