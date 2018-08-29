@@ -10,10 +10,11 @@
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
     <!-- header image -->
-    {.section website}
     <div class="header-image-wrapper">
       <div class="header-image">
+        {.section website}
         <squarespace:block-field id="header-image--{collection.id}" columns="12" />
+        {.end}
       </div>
         <!-- site title or logo -->
       <div class="header-image-lower-half">
@@ -21,12 +22,15 @@
         </div>
         <div class="site-title-wrapper">
           <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle} <span>{siteTagLine}</span></a>
+            {.section website}
+            <a href="/" class="site-title-link">{siteTitle} <span>{siteTagLine}</span>
+            {.end}
+            </a>
           </h1>
         </div>
       </div>            
     </div>
-    {.end}
+    
 
     <!-- site navigation -->
     <squarespace:navigation navigationId="siteNav" template="site-navigation" />
