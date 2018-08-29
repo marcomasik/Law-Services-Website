@@ -11,11 +11,11 @@
 
     <!-- header image -->
     <div class="header-image-wrapper">
-      {.section website}
       <div class="header-image">
-        <squarespace:block-field id="header-image--{collection.id}" columns="12" />
+        {.section website}
+        <squarespace:block-field id="header-image-{website.id}" columns="12" />
+        {.end}
       </div>
-      {.end}
         <!-- site title or logo -->
       <div class="header-image-lower-half">
         <div class="header-image-color-layer">
