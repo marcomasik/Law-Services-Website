@@ -112,20 +112,28 @@ body {
   margin-bottom: 4vw;
 }
 
-.site-navigation {
-  text-align: center;
+.site-navigation-wrapper {
   background: @madison_dark_blue;
-  min-height: 2.5em;
 
-  li {
-    display: inline-block;
-    font-size: 87.5%;
-    padding: 0.83em;
-    list-style: none;
-    float: left;
-    width: 15em;
+  .site-navigation {
+    text-align: center;
+    min-height: 2.5em;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    li {
+      display: inline-block;
+      font-size: 87.5%;
+      padding: 0.83em;
+      list-style: none;
+      float: left;
+      width: 15em;
+    }
   }
 }
+
+
 
 .site-navigation-list {
     margin: 0;

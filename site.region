@@ -33,8 +33,10 @@
     
 
     <!-- site navigation -->
-    <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-
+    <div class="site-navigation-wrapper">
+      <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+    </div>
+    
     <div class="site-container">
 
       <header class="site-header">
