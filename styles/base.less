@@ -159,15 +159,23 @@ body {
     z-index: 10000;
     position: relative;
     height: 0;
+    top: .75em;
+    right: 1.5em;
 
     li {
       display: block;
       float: none;
       background: @madison_dark_blue;
+      width: 19em;
+
+      &:last-child {
+        padding-bottom: 1.5em;
+      }
+
       a{
       .nav-link();
       font-size: 0.8em;
-
+      padding: 1.2em;
       &:hover {
         .nav-link-hover();
         }
