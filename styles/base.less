@@ -115,6 +115,16 @@ body {
 .site-navigation {
   text-align: center;
   background: @madison_dark_blue;
+  min-height: 2.5em;
+
+  li {
+    display: inline-block;
+    font-size: 87.5%;
+    padding: 0.83em;
+    list-style: none;
+    float: left;
+    width: 15em;
+  }
 }
 
 .site-navigation-list {
@@ -134,30 +144,34 @@ body {
 }
 
 .site-navigation-item {
-  display: inline-block;
-  font-size: 87.5%;
-  padding: 0.83em;
-  margin-right: 4em;
 
   .subnav {
     display: none;
+    padding-left: 0;
+    z-index: 10000;
+    position: relative;
+    height: 0;
 
-    a{
+    li {
+      display: block;
+      float: none;
+      background: @madison_dark_blue;
+      a{
       .nav-link();
+      font-size: 0.8em;
 
       &:hover {
         .nav-link-hover();
+        }
       }
     }
   }
 
   &:hover > .subnav {
     display: block;
-    position: absolute;
   }
 
   & + .site-navigation-item {
-    margin-left: 1em;
   }
 
   a {
