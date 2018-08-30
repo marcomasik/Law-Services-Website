@@ -125,6 +125,7 @@ body {
   display: inline-block;
   font-size: 87.5%;
   padding: 0.83em;
+  margin-right: 4em;
 
   & + .site-navigation-item {
     margin-left: 1em;
@@ -217,12 +218,57 @@ body.collection-type-blog.view-list {
 
             &:last-child {
               padding-top: 0 !important;
+              padding-bottom: 0 !important;
             }
           }
         }
       }
     }
   }  
+}
+
+/* Make header image and menu responsive
+***************************************************/
+
+.sqs-layout {
+
+  &:not(.sqs-editing) {
+
+    >.sqs-row {
+
+      &:first-child {
+
+        >[class*=sqs-col] {
+
+          &:first-child {
+
+            >.sqs-block {
+
+              &:last-child {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .sqs-block {
+
+      &+.sqs-row {
+
+        .sqs-block {
+
+          &:not(.float) {
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
