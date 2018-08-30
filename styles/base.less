@@ -121,25 +121,50 @@ body {
     margin: 0;
 }
 
+.nav-link() {
+  color: @alice_light_blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.83em;
+}
+
+.nav-link-hover() {
+  color: @madison_dark_blue;
+  background: @gray;
+}
+
 .site-navigation-item {
   display: inline-block;
   font-size: 87.5%;
   padding: 0.83em;
   margin-right: 4em;
 
+  .subnav {
+    display: none;
+
+    a{
+      .nav-link();
+
+      &:hover {
+        .nav-link-hover();
+      }
+    }
+  }
+
+  &:hover > .subnav {
+    display: block;
+    position: absolute;
+  }
+
   & + .site-navigation-item {
     margin-left: 1em;
   }
 
   a {
-    color: @alice_light_blue;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.83em;
+    .nav-link();
 
     &:hover {
-      color: @madison_dark_blue;
-      background: @gray;
+      .nav-link-hover();
     }
   }
 
