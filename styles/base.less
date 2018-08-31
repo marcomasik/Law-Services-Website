@@ -28,6 +28,10 @@ body {
   background: @gray;
   font-size: 100%;
   font-weight: normal;
+
+  p{
+    font-size: 0.8em;
+  }
 }
 
 .header-image-wrapper {
@@ -75,6 +79,8 @@ body {
   }
 
   h1.site-title-heading {
+    font-size: 3em;
+    letter-spacing: 1px;
 
     a {
       color: #ffffff;
@@ -82,17 +88,19 @@ body {
 
       span {
         color: @alice_light_blue;
+        font-size: 0.75em;
       }
   }
 }
   
 .site-container {
-  line-height: 1.6em;
+  line-height: 1.5em;
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: -30px;
 
   h1, h2, h3 {
     font-weight: normal;
@@ -124,11 +132,16 @@ body {
 
     li {
       display: inline-block;
-      font-size: 87.5%;
+      font-size: 0.95em;
       padding: 0.83em;
       list-style: none;
       float: left;
-      width: 15em;
+      width: 14em;
+      letter-spacing: 1px;
+
+      &:nth-child(4) {
+        width: 12em;
+      }
     }
   }
 }
@@ -159,17 +172,17 @@ body {
     z-index: 10000;
     position: relative;
     height: 0;
-    top: .75em;
-    right: 1.5em;
+    top: .5em;
+    right: 2em;
 
     li {
       display: block;
       float: none;
       background: @madison_dark_blue;
-      width: 19em;
+      width: 17em;
 
       &:last-child {
-        padding-bottom: 1.5em;
+        padding-bottom: 1.8em;
       }
 
       a{
