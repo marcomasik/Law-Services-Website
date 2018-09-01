@@ -47,11 +47,13 @@
        {squarespace.main-content}
       </main>
 
-      <!--Footer with open block field -->
+    </div>
+
+    <!--Footer with open block field -->
+    <div class="footer-wrapper">
       <footer class="site-footer">
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>
-
     </div>
 
     <!-- combo and minify scripts when not logged in -->
