@@ -6,8 +6,48 @@
  * @see http://en.wikipedia.org/wiki/Immediately-invoked_function_expression
  */
 
+
+
 (function() {
   'use strict';
+
+  var nav = document.getElementById("drsimapeter_navigation");
+  var dropdownLink = document.getElementById("dropdownLink");
+  var dropdown = document.getElementById("subnav");
+
+    document.getElementById("mobile-link").onclick = function() {
+      if (nav.className == "site-navigation-list closed") {
+        nav.className = "site-navigation-list open";
+        dropdownLink.id = "dropdownLink-ready";
+        document.getElementById("dropdownLink-ready").onclick = function() {
+          if (dropdown.className == "subnav not-touched") {
+            dropdown.className = "subnav touched";
+            console.log("subnav touched");
+          } else if (dropdown.className == "subnav touched") {
+            dropdown.className = "subnav not-touched";
+            console.log("subnav not-touched");
+          } else {
+            console.log("dropdown not worked")
+          }
+        }
+      } else if (nav.className == "site-navigation-list open") {
+        nav.className = "site-navigation-list closed";
+        dropdownLink.id = "dropdownLink";
+      } else {
+        console.log("sorry not this night")
+      }
+    }
+
+
+
+ // function toggle() {
+ //    var x = document.getElementByClassName("site-navigation-list");
+ //    if (x.className === "desktop") {
+ //        x.className += "mobile";
+ //    } else {
+ //        x.className = "mobile";
+ //    }
+ //  }
 
   // Load all images via Squarespace's Responsive ImageLoader
   function loadAllImages() {

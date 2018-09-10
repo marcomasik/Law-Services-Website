@@ -100,7 +100,7 @@ body {
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: -30px;
+  margin-top: -1.2em;
 
   h1, h2, h3 {
     font-weight: normal;
@@ -130,6 +130,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 
+    .icon-list-item {
+       display: none;
+       color: @alice_light_blue;
+    }
+
     li {
       display: inline-block;
       font-size: 0.95em;
@@ -145,8 +150,6 @@ body {
     }
   }
 }
-
-
 
 .site-navigation-list {
     margin: 0;
@@ -276,6 +279,31 @@ body.collection-type-blog.view-list {
 
   body {
 
+    .site-navigation-wrapper {
+      .site-navigation {
+        .open {
+          li {
+            float:none;
+            display: block;
+          }
+          .subnav{
+            height: auto;
+          }
+            .touched {
+              display: block;
+            }
+        }
+        .site-navigation-item {
+          display: none;
+        }
+        .icon-list-item {
+          display: inline-block;
+          float: right;
+          }
+        }
+      }  
+
+
     .header-image-wrapper {
 
       .sqs-layout {
@@ -307,6 +335,9 @@ body.collection-type-blog.view-list {
     }
   }  
 }
+
+
+
 
 /* Make header image and menu responsive
 ***************************************************/

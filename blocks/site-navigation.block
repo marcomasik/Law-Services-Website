@@ -1,13 +1,13 @@
 <nav class="site-navigation">
-  <ul class="site-navigation-list">
+  <ul id="drsimapeter_navigation" class="site-navigation-list closed">
     {.repeated section items}
 
-      <li class="site-navigation-item {.section active} active-link{.end} {.if folderActive} active-link active-folder{.end}">
+      <li class="site-navigation-item{.section active} active-link{.end} {.if folderActive} active-link active-folder{.end}">
 
         {.folder?}
 
-          <a>{collection.navigationTitle}</a>
-          <ul class="subnav">
+          <a id="dropdownLink">{collection.navigationTitle}</a>
+          <ul id="subnav" class="subnav not-touched">
             {.repeated section items}
               {.collection?}
                 <li class="{.section active} active-link{.end}">
@@ -40,6 +40,10 @@
 
       </li>
     {.end}
-    
+    <li class="icon-list-item">
+      <a id="mobile-link">
+        <i class="fa fa-bars"></i>
+      </a>
+    </li>    
   </ul>
 </nav>
