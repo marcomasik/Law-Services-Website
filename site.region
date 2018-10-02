@@ -25,7 +25,9 @@
         <div class="site-title-wrapper">
           <h1 class="site-title-heading" data-content-field="site-title">
             {.section website}
-            <a href="/" class="site-title-link">{siteTitle} <span>{siteTagLine}</span>
+            <a href="/" class="site-title-link">
+              <div class="site-title">{siteTitle}</div>
+              <div class="site-tagline">{siteTagLine}</div>
             {.end}
             </a>
           </h1>
